@@ -1,0 +1,10 @@
+@mixin displayGrid($firstArgument, $secondArgument){
+    display: grid;
+    grid-template: repeat($firstArgument, 1fr) / repeat($secondArgument, 1fr);
+}
+@mixin displayFlex($direction, $alignItems, $justContent){
+    display: flex;
+    flex-direction: $direction;
+    align-items: $alignItems;
+    justify-content: $justContent;
+}
