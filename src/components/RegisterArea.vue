@@ -149,4 +149,41 @@ function showStudents(){
     }
   }
 }
+@media only screen and (max-width:600px){
+  #register-zone {
+  @include displayFlex(column, center, center);
+  height: 100%;
+  .info-student{
+    width: 50%;
+    height: 10%;
+    background-color: $principal-color;
+    color: $font-color;
+    font-size: large;
+    font-weight: bold;
+    border: solid $font-color;
+    margin: 1%;
+  }
+  .buttons-apartate{
+    width: 100%;
+    height: 10%;
+    @include displayFlex(row, normal, center);
+    .button-action{
+      width: 22%;
+      margin: 0 1%;
+      background-color: $third-color;
+      border: solid $font-color;
+      color: $font-color;
+      font-size: large;
+      font-weight: bold;
+    }
+    .button-action:hover{
+      border: solid $secondary-color;
+      color: $secondary-color;
+      font-size: large;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+}
+}
 </style>
