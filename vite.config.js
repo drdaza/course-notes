@@ -6,7 +6,7 @@ import { test } from 'vitest'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/notes-pro/docs/',
+  base: '/notes-pro/dist/',
   plugins: [vue()],
   resolve: {
     alias: {
