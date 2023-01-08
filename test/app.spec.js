@@ -10,6 +10,7 @@ describe('App Component', ()=>{
       const wrapper = mount(App);
       const appHeader = wrapper.findComponent('Header');
       console.log(wrapper.find('main').exists());
+      console.log(appHeader);
       
       expect(wrapper.find('main').exists()).toBeTruthy();
       expect(appHeader.exists()).toBeTruthy();

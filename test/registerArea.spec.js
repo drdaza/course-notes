@@ -32,7 +32,7 @@ describe('Test Register zone', ()=>{
         expect(wrapper.findComponent(TableNotes).exists()).toBeTruthy();
         expect(wrapper.findComponent(TableNotes).find('th').text()).toBe(name);
         expect(wrapper.findComponent(TableNotes).findAll('td')[0].text()).toBe(course);
-        expect(wrapper.findComponent(TableNotes).findAll('td')[1].text()).toEqual(`${number}`);
+        expect(wrapper.findComponent(TableNotes).findAll('td')[1].text()).toEqual(`Muy deficiente`);
         
       });
 })
